@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".BottomSheetFragment">
+
+    <ImageView
+        android:id="@+id/iv_night_time"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginLeft="@dimen/outer_margin"
+        android:layout_marginStart="@dimen/outer_margin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crescent" />
+
+    <ImageView
+        android:id="@+id/iv_no_image"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_download"
+        app:layout_constraintStart_toEndOf="@+id/iv_night_time"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/no_image" />
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginEnd="@dimen/outer_margin"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/iv_bookmark"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginLeft="@dimen/outer_margin"
+        android:layout_marginStart="@dimen/outer_margin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/bookmark" />
+
+    <ImageView
+        android:id="@+id/iv_bookmark_history"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_save_page"
+        app:layout_constraintStart_toEndOf="@+id/iv_bookmark"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/bookmark_history" />
+
+    <ImageView
+        android:id="@+id/iv_save_page"
+        android:layout_width="@dimen/control_buttons_size"
+        android:layout_height="@dimen/control_buttons_size"
+        android:layout_marginEnd="@dimen/outer_margin"
+        android:layout_marginRight="@dimen/outer_margin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:srcCompat="@drawable/save_page" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nighttime"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_night_time"
+        app:layout_constraintStart_toStartOf="@+id/iv_night_time"
+        app:layout_constraintTop_toBottomOf="@+id/iv_night_time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/no_image"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_no_image"
+        app:layout_constraintStart_toStartOf="@+id/iv_no_image"
+        app:layout_constraintTop_toBottomOf="@+id/iv_no_image" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/download_file"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_download"
+        app:layout_constraintStart_toStartOf="@+id/iv_download"
+        app:layout_constraintTop_toBottomOf="@+id/iv_download" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_bookmarks"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bookmark"
+        app:layout_constraintStart_toStartOf="@+id/iv_bookmark"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bookmark" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/bookmark_history"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_bookmark_history"
+        app:layout_constraintStart_toStartOf="@+id/iv_bookmark_history"
+        app:layout_constraintTop_toBottomOf="@+id/iv_bookmark_history" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/save_page"
+        android:textSize="@dimen/txt_size"
+        app:layout_constraintEnd_toEndOf="@+id/iv_save_page"
+        app:layout_constraintStart_toStartOf="@+id/iv_save_page"
+        app:layout_constraintTop_toBottomOf="@+id/iv_save_page" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="72dp" />
+</android.support.constraint.ConstraintLayout>

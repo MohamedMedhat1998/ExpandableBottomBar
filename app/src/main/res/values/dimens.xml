@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="control_buttons_size">20dp</dimen>
+    <dimen name="outer_margin">32dp</dimen>
+    <dimen name="control_buttons_outer_margin">64dp</dimen>
+    <dimen name="txt_size">12sp</dimen>
+</resources>

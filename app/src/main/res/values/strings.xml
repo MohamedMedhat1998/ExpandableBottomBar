@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Expandable Bottom Bar Test</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nighttime">Nighttime</string>
+    <string name="no_image">No Image</string>
+    <string name="download_file">Download/File</string>
+    <string name="add_bookmarks">Add Bookmarks</string>
+    <string name="bookmark_history">Bookmark/History</string>
+    <string name="save_page">Save Page</string>
+    <string name="dummy">Please fill this page</string>
+</resources>
